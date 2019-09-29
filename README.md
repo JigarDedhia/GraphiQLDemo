@@ -11,7 +11,8 @@ The steps to run and test the application:
 
 Sample GraphiQL Queries/Mutations:
 1. Mutation
-`mutation {
+```graphql
+mutation {
   newAuthor(firstName:"ABC",lastName:"DEF") 
   {
     id
@@ -20,9 +21,10 @@ Sample GraphiQL Queries/Mutations:
   {
       id
   }
-}`
+}
+```
 2. Query
-`
+```graphql
 query {
   findAllAuthors 
   {
@@ -31,9 +33,10 @@ query {
     lastName
     }
 }
-`
+```
 3. Query
-`query {
+```graphql
+query {
   findAllBooks
   {
     id,
@@ -46,8 +49,11 @@ query {
       lastName
     }
     }
-}`
+}
+```
 4. Query
-`query {
+```graphql
+query {
   countBooks
-}`
+}
+```
